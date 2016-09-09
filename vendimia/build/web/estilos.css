@@ -1,0 +1,202 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+body {
+    font: 14px/1 'Open Sans', sans-serif;
+    color: #555;
+    text-align: center;
+}
+
+nav {
+    background: #393939;
+    width: 99%;
+    text-align: left;
+    display: inline-block;
+    padding: 1px 10px;
+}
+label[id*='etiqueta'] {
+    height: 15px;
+    color: white;
+    background-color: #5693D8;
+    border-radius: 5px;
+    padding: 2px;
+}
+nav ul {
+    color: white;
+    display: inline-block;
+    background-color: black;
+    padding: 5px;
+}
+
+nav ul a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    line-height: 22px;
+    padding: 0 15px;
+}
+
+nav ul li {
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li:hover {
+    background: gray;
+    width: 100%;
+    transition-property: all;
+    padding: 0 auto;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: #fff;
+    padding: 0;
+}
+
+nav ul ul li {
+    width: 150px;
+    padding: 5px 5px;
+    border-bottom: 1px solid #bbb;
+}
+
+nav ul li:hover > ul {
+    display: block;
+    z-index: 100;
+}
+
+section {
+    border-radius: 0.25em;
+    text-align: center;
+    display: block;
+    margin: 10px;
+    min-width: 100px;
+    min-height: 200px;
+}
+
+#cont2 {
+    box-shadow: 0 0 5px 1px #5693D8;
+}
+
+#cont2 .renglon, #cont2 .renglon_venta {
+    padding: 0em 25%;
+}
+
+#newvent {
+    width: 100%;
+    height: 30px;
+}
+.renglon, .renglon_venta{
+    margin: 1em;
+    display:block;
+}
+
+.renglon .label, .renglon_venta .label{
+    width:25%;
+    background-color: white;
+    color:green;
+    text-align:right;
+    display:inline-block;
+}
+.renglon .label_input, .renglon_venta .label_input{
+    width:25%;
+    text-align:left;
+    display:inline-block;
+}
+.renglon1 {
+    border-radius: 0.25em;
+    background-color: #5693D8;
+    color: white;
+    height: 25px;
+}
+
+.input {
+    border-radius: 0.25em;
+    font-weight: bold;
+    padding: 1px 2px;
+    resize: none;
+    box-shadow: 0 0 5px black;
+    border: 0;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table thead {
+    color: white;
+    background-color: purple;
+}
+
+table th,
+table td {  
+    margin-left: 10px;
+}
+
+table caption {
+    color: blue;
+    border-bottom: solid blue;
+}
+
+#busquedas {
+    text-align: left;
+}
+
+.renglon label {
+    width: 10px;
+    height: 10px;
+    border-radius: 0.5em;
+}
+
+label[for*='tab1'] {
+    content: "\f0fe";
+    border-radius: 0.5em;
+}
+td label{
+    float:right;
+}
+#new_venta {
+    float: right;
+}
+.renglon_venta select{
+    width: 100%;
+    box-shadow: 0 0 5px red;
+}
+.renglon_venta label{
+    color: green;
+}
+.precios{
+    text-align: right;
+    display: block;
+    margin-bottom: 1em; 
+}
+.precios label{
+    color: black;
+    margin: 1em 0.5em;
+    padding: 2px;
+    border-radius: 0.5em;
+    background-color: gray;
+}
+.siguiente .label{
+    color:white;
+    margin-right: 1em;
+    background-color: green;
+    float:right;
+    display: inline;
+    padding: 10px;
+}
+.abonos label{
+    width: 100%;
+}
+.abonos tr td div{
+    display: inline;
+}
+.abonos tbody tr:nth-child(odd) {
+    background: #fbfbfb;
+}
+.abonos tbody tr:nth-child(even) {
+    background: #f2f2f2;
+}
